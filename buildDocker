@@ -1,0 +1,2 @@
+cd dockercontainer
+sudo docker build -t octoprint-klipper .

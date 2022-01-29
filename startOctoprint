@@ -1,0 +1,3 @@
+sudo docker rm -f  octoprint-endyjunior;sudo docker run -d  -v /home/z/apps/octoprint-endyjunior:/octoprint -v /home/z/Dropbox/OpenSCAD/klipper/config.cfg:/home/octoprint/printer.cfg  --device=/tmp/endyjunior:/dev/ttyPrinter --name octoprint-endyjunior octoprint/octoprint:minimal; /cmp/init.sh 
+
+
