@@ -42,6 +42,12 @@
   #define GPIO_Tx GPIO('B', 10)
   #define USARTx USART3
   #define USARTx_IRQn USART3_IRQn
+#elif CONFIG_STM32_SERIAL_USART6
+DECL_CONSTANT_STR("RESERVE_PINS_serial", "PC7,PC6");
+  #define GPIO_Rx GPIO('C', 7)
+  #define GPIO_Tx GPIO('C', 6)
+  #define USARTx USART6
+  #define USARTx_IRQn USART6_IRQn
 #elif CONFIG_STM32_SERIAL_USART3_ALT_PD9_PD8
   DECL_CONSTANT_STR("RESERVE_PINS_serial", "PD9,PD8");
   #define GPIO_Rx GPIO('D', 9)
