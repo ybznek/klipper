@@ -1,0 +1,3 @@
+MOONRAKER_CONFIG=/home/klippy/klipper_config/moonraker.conf
+MOONRAKER_LOG=/home/klippy/klipper_logs/moonraker.log
+/home/klippy/moonraker-env/bin/python /home/klippy/moonraker/moonraker/moonraker.py -c ${MOONRAKER_CONFIG} -l ${MOONRAKER_LOG}

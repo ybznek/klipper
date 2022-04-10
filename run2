@@ -1,9 +1,10 @@
 sudo docker rm -f  octoprint-endyjunior
 sudo docker run -d  \
 --privileged \
+-v /dev:/dev \
 -v /home/z/apps/octoprint-endyjunior:/octoprint \
--v /home/z/Dropbox/OpenSCAD/klipper/config.cfg:/home/klippy/config/printer.cfg  \
+-v /home/z/Dropbox/OpenSCAD/klipper/config.cfg:/home/klippy/printer.cfg  \
 -v /home/z/apps/octoprint-endyjunior/env:/home/klippy/OctoPrint/lib \
--v /dev/serial:/dev/serial \
+--device=/dev/serial/by-id/usb-1a86_USB2.0-Serial-if00-port0:/dev/ttyPrinter \
 --name octoprint-endyjunior octoprint-klipper; /cmp/init.sh
 

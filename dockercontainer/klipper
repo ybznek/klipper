@@ -1,1 +1,1 @@
-/home/klippy/klippy-env/bin/python /home/klippy/klipper/klippy/klippy.py /home/klippy/printer.cfg -l /tmp/klippy.log
+/home/klippy/klippy-env/bin/python /home/klippy/klipper/klippy/klippy.py /home/klippy/config/printer.cfg -l /tmp/klippy.log

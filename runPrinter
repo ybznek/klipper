@@ -1,0 +1,14 @@
+cd kiuah; sudo docker build . -t klipper
+sudo docker rm -f printer;
+sudo docker run -d --privileged \
+-v /dev:/dev \
+-v /home/z/Dropbox/OpenSCAD/klipper/config:/home/klippy/klipper_config/ \
+--name printer \
+--tmpfs /tmp \
+--tmpfs /run \
+--tmpfs /run/lock \
+-v /sys/fs/cgroup:/sys/fs/cgroup:ro \
+klipper
+sleep 2
+/cmp/init.sh
+./enterPrinter

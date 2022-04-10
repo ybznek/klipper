@@ -1,6 +1,8 @@
 /serveOctoprint &
+/serviceRunner /klipper 10 &
+/serviceRunner /moonraker 10 &
+
 while true;
 do
-	/klipper
-	sleep 1
+sleep 1h
 done
